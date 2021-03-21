@@ -27,10 +27,19 @@ $accent-amber: #FFC107
 $accent-orange: #FF9800
 $accent-deep-orange: #FF5722
 
+html
+    position: relative
+    min-height: 100vh
+    padding: 0
+    overflow-x: hidden
+
 body
     background: $background-color
     color: $text-secondary-color
     font-family: $secondary-font
+    display: flex
+    flex-direction: column
+    min-height: 100vh
     margin: 0
 
 // TODO: Usar forma apropriada?
