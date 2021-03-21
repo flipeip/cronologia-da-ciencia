@@ -1,0 +1,9 @@
+
+<section class="event active" id="event-{{ include.index }}">
+    <div class="icon">{{ include.icon }}</div> <!-- TODO: Editar sistema de icones -->
+    <article class="data">
+        <h2 class="time">{{ include.time }}</h2>
+        <h1 class="title">{{ include.title }}</h1>
+    </article>
+    <div class="content">{{ include.content | markdownify }}</div>
+</section>

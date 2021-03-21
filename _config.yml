@@ -1,0 +1,10 @@
+title: Cronologia da Ciência
+description: Uma linha do tempo interativa contando um pouco da história da ciência
+baseurl: ""
+url: "https://fittl3.github.io/cronologia-da-ciencia"
+
+exclude:
+  - /.vscode/
+
+collections:
+  - events

@@ -1,0 +1,93 @@
+.events
+    position: relative
+    .line
+        position: absolute
+        z-index: -999
+        bottom: 0
+        left: 33px
+        height: 100%
+        width: 5px
+        background: $text-primary-color
+    .event
+        display: grid
+        grid-template-columns: 30px auto
+        grid-template-rows: auto auto
+        margin: 20px
+        .icon
+            border-radius: 15px
+            width: 100%
+            height: 100%
+            background: $accent-color
+            box-shadow: 0 0 20px $accent-color
+            transition: .3s border-radius
+        .data
+            margin: 1vw 1vw
+            .time
+                color: $accent-color
+                font-size: 30pt
+                margin: .1rem 0
+            .title
+                color: $text-primary-color
+                font-size: 20pt
+                margin: .1rem 0
+        .content
+            grid-column-start: span 2
+            margin: 0
+            margin-left: 13px
+            opacity: 0
+            border: 0 $accent-color solid
+            border-radius: 15px
+            border-top-left-radius: 0
+            padding: 0 40px
+            max-width: 100vw
+            height: 0
+            overflow: hidden
+            transition: .3s .1s  height, .3s .1s opacity
+        &:hover //.active
+            .icon
+                border-bottom-right-radius: 0
+            .content
+                transition: .3s .1s  height, .3s .1s opacity
+                opacity: 1
+                height: 100%
+                border-width: 5px
+
+.content
+    p
+        text-align: justify
+    img
+        max-width: 100%
+        display: block
+        margin: 0 auto
+    hr
+        border-style: dashed
+        border-color: $accent-color
+    blockquote
+        border-left: 3px dashed $accent-color
+        margin: 5px
+        padding: 5px 20px
+        p
+            margin: 10px 5px
+    code
+        background-color: $background-color-alt
+        padding: 5px
+        border-radius: 15px
+    pre
+        display: inline-block
+        min-width: 200px
+        margin: 0 20px
+        border-radius: 15px
+        background-color: $background-color-alt
+        padding: 5px
+        code
+            background: none
+            padding: auto
+    table
+        margin: auto 0
+        th
+            background-color: $accent-color
+            color: $background-color
+            padding: 5px
+        td
+            background-color: $background-color-alt
+            padding: 5px
