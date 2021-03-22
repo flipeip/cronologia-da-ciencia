@@ -1,5 +1,16 @@
+$led-effect: 10px
+
+$color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple": #673AB7, "indigo": #3F51B5, "blue": #2196F3, "light-blue": #03A9F4, "cyan": #00BCD4, "teal": #009688, "green": #4CAF50, "light-green": #8BC34A, "lime": #CDDC39, "yellow": #FFEB3B, "amber": #FFC107, "orange": #FF9800, "deep-orange": #FF5722)
 .events
     position: relative
+    margin-top: 20px
+    .timeline-point
+        width: 30px
+        height: 30px
+        background-color: $accent-color
+        box-shadow: 0 0 $led-effect $accent-color
+        border-radius: 15px
+        margin-left: 21px
     .line
         position: absolute
         z-index: -999
@@ -8,87 +19,88 @@
         height: 100%
         width: 5px
         background: $text-primary-color
-    .event
-        display: grid
-        grid-template-columns: 30px auto
-        grid-template-rows: auto auto
-        margin: 0 //20px
-        padding: 20px
-        .icon
-            border-radius: 15px
-            width: 100%
-            height: 100%
-            background: $accent-color
-            box-shadow: 0 0 20px $accent-color
-            transition: .3s border-radius
-        .data
-            margin: 10px
-            .time
-                color: $accent-color
-                font-size: 30pt
-                margin: .1rem 0
-            .title
-                color: $text-primary-color
-                font-size: 20pt
-                margin: .1rem 0
-        .content
-            grid-column-start: span 2
-            background-color: $background-color
-            margin: 0
-            opacity: 0
-            border: 5px $accent-color solid
-            border-radius: 15px
-            border-top-left-radius: 0
-            padding: 0 40px
-            max-width: 100%
-            height: 0
-            overflow: hidden
-            transition: .3s .1s  height, .3s .1s opacity
-        &:hover //.active
-            .icon
-                border-bottom-right-radius: 0
-                border-bottom-left-radius: 0
-            .content
-                transition: .3s .1s  height, .3s .1s opacity
-                opacity: 1
-                height: 100%
 
-.content
-    p
-        text-align: justify
-    img
-        max-width: 70%
-        display: block
-        margin: 0 auto
-    hr
-        border-style: dashed
-        border-color: $accent-color
-    blockquote
-        border-left: 3px dashed $accent-color
-        margin: 5px
-        padding: 5px 20px
-        p
-            margin: 10px 5px
-    code
-        background-color: $background-color-alt
-        padding: 5px
-        border-radius: 15px
-    pre
-        display: inline-block
-        min-width: 200px
-        margin: 0 20px
-        border-radius: 15px
-        background-color: $background-color-alt
-        padding: 5px
-        code
-            background: none
-            padding: auto
-    table
-        margin: auto 0
-        th
-            background-color: $accent-color
-            color: $background-color
-            padding: 5px
-        td
-            background-color: $background-color-alt
-            padding: 5px
+@each $color-key, $color in $color-map
+    .events
+        .event--#{$color-key}
+            display: grid
+            grid-template-columns: 30px auto
+            grid-template-rows: auto auto
+            margin: 0 //20px
+            padding: 20px
+            &:hover //.active
+                .icon
+                    border-bottom-right-radius: 0
+                    border-bottom-left-radius: 0
+                .content
+                    transition: .3s .1s  height, .3s .1s opacity
+                    opacity: 1
+                    height: 100%
+            .icon
+                border-radius: 15px
+                width: 100%
+                height: 100%
+                background: $color
+                box-shadow: 0 0 $led-effect $color
+                transition: .3s border-radius
+            .data
+                margin: 10px
+                .time
+                    color: $color
+                    font-size: 30pt
+                    margin: .1rem 0
+                .title
+                    color: $text-primary-color
+                    font-size: 20pt
+                    margin: .1rem 0
+            .content
+                grid-column-start: span 2
+                background-color: $background-color
+                margin: 0
+                opacity: 0
+                border: 5px $color solid
+                border-radius: 15px
+                border-top-left-radius: 0
+                padding: 0 40px
+                max-width: 100%
+                height: 0
+                overflow: hidden
+                transition: .3s .1s  height, .3s .1s opacity
+                p
+                    text-align: justify
+                img
+                    max-width: 70%
+                    display: block
+                    margin: 0 auto
+                hr
+                    border-style: dashed
+                    border-color: $color
+                blockquote
+                    border-left: 3px dashed $color
+                    margin: 5px
+                    padding: 5px 20px
+                    p
+                        margin: 10px 5px
+                code
+                    background-color: $background-color-alt
+                    padding: 5px
+                    border-radius: 15px
+                pre
+                    display: inline-block
+                    min-width: 200px
+                    margin: 0 20px
+                    border-radius: 15px
+                    background-color: $background-color-alt
+                    padding: 5px
+                    code
+                        background: none
+                        padding: auto
+                table
+                    margin: auto 0
+                    th
+                        background-color: $color
+                        color: $background-color
+                        padding: 5px
+                    td
+                        background-color: $background-color-alt
+                        padding: 5px
