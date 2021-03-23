@@ -3,6 +3,7 @@ index: 001
 title: Teste A
 time: 1992
 color: red
+icon: computer
 ---
 # h1 Heading 8-)
 ## h2 Heading
