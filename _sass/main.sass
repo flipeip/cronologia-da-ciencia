@@ -7,8 +7,13 @@ $background-color-alt: #121212
 $accent-color: #f0ed38
 $text-primary-color: #ffffff
 $text-secondary-color: #ffffffbb
+
 $primary-font: 'Roboto Mono', monospace
 $secondary-font: 'Roboto', sans-serif
+
+$mobile: 641px
+$tablet: 769px
+$desktop: 1025px
 
 html
     position: relative
@@ -33,6 +38,10 @@ a
 .interface
     max-width: 1000px
     margin: 0 auto
+    @media only screen and (max-width: $tablet)
+        max-width: 650px
+    @media only screen and (max-width: $desktop)
+        max-width: 750px
 
 ::-webkit-scrollbar
     width: 10px

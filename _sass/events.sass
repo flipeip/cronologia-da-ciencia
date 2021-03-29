@@ -3,7 +3,7 @@ $led-effect: 10px
 $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple": #673AB7, "indigo": #3F51B5, "blue": #2196F3, "light-blue": #03A9F4, "cyan": #00BCD4, "teal": #009688, "green": #4CAF50, "light-green": #8BC34A, "lime": #CDDC39, "yellow": #FFEB3B, "amber": #FFC107, "orange": #FF9800, "deep-orange": #FF5722)
 .events
     position: relative
-    margin-top: 20px
+    margin: 20px 0
     .timeline-point
         width: 30px
         height: 30px
@@ -11,6 +11,8 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
         box-shadow: 0 0 $led-effect $accent-color
         border-radius: 15px
         margin-left: 21px
+        @media only screen and (max-width: $mobile)
+            margin-left: 6px
     .line
         position: absolute
         z-index: -999
@@ -19,12 +21,18 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
         height: 100%
         width: 5px
         background: $text-primary-color
+        border-radius: 15px
+        @media only screen and (max-width: $mobile)
+            left: 18px
     .event
         display: grid
         grid-template-columns: 30px auto
         grid-template-rows: auto auto
-        margin: 0 //20px
+        margin: 0
         padding: 20px
+        @media only screen and (max-width: $mobile)
+            padding: 5px
+            margin: 10px 0
         &.active
             .content
                 opacity: 1
@@ -89,6 +97,8 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
             height: 0
             overflow: hidden
             transition: .3s .1s  height, .3s .1s opacity
+            @media only screen and (max-width: $mobile)
+                padding: 0 15px
             p
                 text-align: justify
             img
