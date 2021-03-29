@@ -19,118 +19,123 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
         height: 100%
         width: 5px
         background: $text-primary-color
+    .event
+        display: grid
+        grid-template-columns: 30px auto
+        grid-template-rows: auto auto
+        margin: 0 //20px
+        padding: 20px
+        &.active
+            .content
+                opacity: 1
+                height: 100%
+            .data
+                border-bottom-right-radius: 0
+                .expandable
+                    .material-icons-round
+                        transform: rotate(180deg)
+        .icon
+            z-index: 999
+            border-top-left-radius: 15px
+            border-bottom-left-radius: 15px
+            width: 100%
+            height: 100%
+            transition: .3s border-radius
+            display: table
+            span
+                color: $background-color
+                display: table-cell
+                vertical-align: middle
+                text-align: center
+                height: 100%
+        .data
+            background-color: $background-color-alt
+            cursor: pointer
+            border-top-right-radius: 15px
+            border-bottom-right-radius: 15px
+            padding: 10px
+            transition: .3s border-radius
+            display: grid
+            grid-template-columns: auto auto
+            grid-template-rows: auto auto
+            .time
+                font-size: 30pt
+                margin: .1rem 0
+            .title
+                color: $text-primary-color
+                font-size: 20pt
+                margin: .1rem 0
+            .expandable
+                text-align: right
+                grid-row-start: span 2
+                display: flex
+                justify-content: flex-end
+                height: 100%
+                .material-icons-round
+                    align-self: center
+                    height: 48px
+                    display: inline-block
+                    font-size: 48px !important
+                    transition: .3s transform
+        .content
+            background-color: $background-color-alt
+            grid-column-start: span 2
+            margin: 0
+            margin-left: 13px
+            opacity: 0
+            border-bottom-right-radius: 15px
+            padding: 0 40px
+            max-width: 100%
+            height: 0
+            overflow: hidden
+            transition: .3s .1s  height, .3s .1s opacity
+            p
+                text-align: justify
+            img
+                max-width: 70%
+                display: block
+                margin: 0 auto
+            hr
+                border-style: dashed
+            blockquote
+                margin: 5px
+                padding: 5px 20px
+                p
+                    margin: 10px 5px
+            code
+                padding: 5px
+                border-radius: 15px
+                background-color: $background-color
+            pre
+                display: inline-block
+                min-width: 200px
+                margin: 0 20px
+                border-radius: 15px
+                padding: 5px
+                background-color: $background-color
+                code
+                    background: none
+                    padding: auto
+            table
+                margin: auto 0
+                th
+                    padding: 5px
+                    color: $background-color
+                td
+                    padding: 5px
+                    background-color: $background-color
 
 @each $color-key, $color in $color-map
-    .events
-        .event.#{$color-key}
-            display: grid
-            grid-template-columns: 30px auto
-            grid-template-rows: auto auto
-            margin: 0 //20px
-            padding: 20px
-            &.active
-                .content
-                    opacity: 1
-                    height: 100%
-                .data
-                    border-bottom-right-radius: 0
-                    .expandable
-                        .material-icons-round
-                            transform: rotate(180deg)
-            .icon
-                z-index: 999
-                border-top-left-radius: 15px
-                border-bottom-left-radius: 15px
-                width: 100%
-                height: 100%
-                background: $color
-                box-shadow: 0 0 $led-effect $color
-                transition: .3s border-radius
-                display: table
-                span
-                    display: table-cell
-                    color: $background-color
-                    vertical-align: middle
-                    text-align: center
-                    height: 100%
-            .data
-                cursor: pointer
-                border-top-right-radius: 15px
-                border-bottom-right-radius: 15px
-                padding: 10px
-                background-color: $background-color-alt
-                transition: .3s border-radius
-                display: grid
-                grid-template-columns: auto auto
-                grid-template-rows: auto auto
-                .time
-                    color: $color
-                    font-size: 30pt
-                    margin: .1rem 0
-                .title
-                    color: $text-primary-color
-                    font-size: 20pt
-                    margin: .1rem 0
-                .expandable
-                    text-align: right
-                    grid-row-start: span 2
-                    display: flex
-                    justify-content: flex-end
-                    height: 100%
-                    .material-icons-round
-                        align-self: center
-                        height: 48px
-                        display: inline-block
-                        font-size: 48px !important
-                        transition: .3s transform
-            .content
-                grid-column-start: span 2
-                background-color: $background-color-alt
-                margin: 0
-                margin-left: 13px
-                opacity: 0
-                border-left: 5px $color solid
-                border-bottom-right-radius: 15px
-                padding: 0 40px
-                max-width: 100%
-                height: 0
-                overflow: hidden
-                transition: .3s .1s  height, .3s .1s opacity
-                p
-                    text-align: justify
-                img
-                    max-width: 70%
-                    display: block
-                    margin: 0 auto
-                hr
-                    border-style: dashed
-                    border-color: $color
-                blockquote
-                    border-left: 3px dashed $color
-                    margin: 5px
-                    padding: 5px 20px
-                    p
-                        margin: 10px 5px
-                code
-                    background-color: $background-color
-                    padding: 5px
-                    border-radius: 15px
-                pre
-                    display: inline-block
-                    min-width: 200px
-                    margin: 0 20px
-                    border-radius: 15px
-                    background-color: $background-color
-                    padding: 5px
-                    code
-                        background: none
-                        padding: auto
-                table
-                    margin: auto 0
-                    th
-                        background-color: $color
-                        color: $background-color
-                        padding: 5px
-                    td
-                        background-color: $background-color
-                        padding: 5px
+    .event.#{$color-key}
+        .icon
+            background: $color
+            box-shadow: 0 0 $led-effect $color
+        .content
+            border-left: 5px $color solid
+            hr
+                border-color: $color
+            blockquote
+                border-left: 3px dashed $color
+            table
+                th
+                    background-color: $color
