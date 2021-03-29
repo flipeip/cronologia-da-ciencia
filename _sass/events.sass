@@ -22,13 +22,13 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
 
 @each $color-key, $color in $color-map
     .events
-        .event--#{$color-key}
+        .event.#{$color-key}
             display: grid
             grid-template-columns: 30px auto
             grid-template-rows: auto auto
             margin: 0 //20px
             padding: 20px
-            &:hover //.active
+            &.active
                 .content
                     opacity: 1
                     height: 100%
@@ -54,6 +54,7 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
                     text-align: center
                     height: 100%
             .data
+                cursor: pointer
                 border-top-right-radius: 15px
                 border-bottom-right-radius: 15px
                 padding: 10px
