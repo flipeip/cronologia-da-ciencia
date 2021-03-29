@@ -25,7 +25,6 @@ body
     min-height: 100vh
     margin: 0
 
-// TODO: Usar forma apropriada?
 a
     color: $text-primary-color
     &:hover
@@ -34,6 +33,22 @@ a
 .interface
     max-width: 1000px
     margin: 0 auto
+
+::-webkit-scrollbar
+    width: 10px
+
+/* Track */
+::-webkit-scrollbar-track
+    background: #00000000
+
+/* Handle */
+::-webkit-scrollbar-thumb
+    background: $background-color-alt
+    border-radius: 30px
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+    background: $text-secondary-color
 
 @import events
 
