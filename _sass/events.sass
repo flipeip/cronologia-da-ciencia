@@ -10,23 +10,23 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
         background-color: $accent-color
         box-shadow: 0 0 $led-effect $accent-color
         border-radius: 15px
-        margin-left: 21px
+        margin-left: 33px
         @media only screen and (max-width: $mobile)
-            margin-left: 6px
+            margin-left: 18px
     .line
         position: absolute
         z-index: -999
         bottom: 0
-        left: 33px
+        left: 45px
         height: 100%
         width: 5px
         background: $text-primary-color
         border-radius: 15px
         @media only screen and (max-width: $mobile)
-            left: 18px
+            left: 30px
     .event
         display: grid
-        grid-template-columns: 30px auto
+        grid-template-columns: 50px auto
         grid-template-rows: auto auto
         margin: 0
         padding: 20px
@@ -52,6 +52,7 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
             display: table
             span
                 color: $background-color
+                font-size: 32px
                 display: table-cell
                 vertical-align: middle
                 text-align: center
@@ -89,7 +90,7 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
             background-color: $background-color-alt
             grid-column-start: span 2
             margin: 0
-            margin-left: 13px
+            margin-left: 25px
             opacity: 0
             border-bottom-right-radius: 15px
             padding: 0 40px
@@ -99,8 +100,6 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
             transition: .3s .1s  height, .3s .1s opacity
             @media only screen and (max-width: $mobile)
                 padding: 0 15px
-            p
-                text-align: justify
             img
                 max-width: 70%
                 display: block
@@ -134,6 +133,12 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
                 td
                     padding: 5px
                     background-color: $background-color
+            .footnotes
+                ol
+                    padding-inline-start: 20px
+                    li
+                        border-left: 3px solid
+                        padding-left: 5px
 
 @each $color-key, $color in $color-map
     .event.#{$color-key}
@@ -149,3 +154,7 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
             table
                 th
                     background-color: $color
+            .footnotes
+                ol
+                    li
+                        border-color: $color
