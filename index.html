@@ -4,8 +4,8 @@ layout: default
 <div class="events">
 <div class="timeline-point"></div>
 {% for event in site.events %}
-{% capture pos %}{% if forloop.first %}first{% endif %}{% if forloop.last %}last{% endif %}{% endcapture %}
-{% include event_layout.html color=event.color index=event.index title=event.title content=event.content time=event.time icon=event.icon pos=pos %}
+{% capture pos %}{{ forloop.index }}{% endcapture %}
+{% include event_layout.html color=event.color index=pos title=event.title content=event.content time=event.time icon=event.icon %}
 {% endfor %}
 <div class="line"></div>
 <div class="timeline-point"></div>
