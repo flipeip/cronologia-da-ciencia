@@ -68,11 +68,11 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
             grid-template-columns: auto auto
             grid-template-rows: auto auto
             .time
-                font-size: 30pt
-                margin: .1rem 0
-            .title
-                color: $text-primary-color
                 font-size: 20pt
+                margin: .1rem 0
+                color: $text-primary-color
+            .title
+                font-size: 30pt
                 margin: .1rem 0
             .expandable
                 text-align: right
@@ -145,6 +145,9 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #9C27B0, "deep-purple":
         .icon
             background: $color
             box-shadow: 0 0 $led-effect $color
+        .data
+            .title
+                color: $color
         .content
             border-left: 5px $color solid
             hr
