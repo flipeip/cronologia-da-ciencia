@@ -1,6 +1,6 @@
 ---
 title: Pitágoras
-time: Século VI a.C.
+time: 582 a.C. - 497 a. C.
 color: pink
 icon: pin
 ---

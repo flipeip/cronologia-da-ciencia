@@ -1,6 +1,6 @@
 ---
 title: Aristóteles
-time: Século IV a.C.
+time: 384 a.C./322 a.C
 color: purple
 icon: psychology
 ---
@@ -8,4 +8,4 @@ Filósofo discípulo de Platão (427-347 a.C.) e fundador do Liceu de Atenas, Ar
 
 [^aranha]: ARANHA, Mª Lúcia Aranha; MARTINS, Mª Helena Pires. **Filosofando: uma introdução a Filosofia**. São Paulo: Moderna, 2000.
 
-[^frazao]: FRAZÃO, Dilva. **Biografia de Aristóteles**. eBiografia, 13 set. 2019. Disponível em: [https://www.ebiografia.com/aristoteles/](https://www.ebiografia.com/aristoteles/). Acesso em: 24 mar. 2021.
+[^frazao]: FRAZÃO, Dilva. Biografia de Aristóteles. **eBiografia**, 13 set. 2019. Disponível em: [https://www.ebiografia.com/aristoteles/](https://www.ebiografia.com/aristoteles/). Acesso em: 24 mar. 2021.
