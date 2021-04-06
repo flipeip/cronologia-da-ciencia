@@ -25,7 +25,7 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #aa00ff, "deep-purple":
         @media only screen and (max-width: $mobile)
             left: 30px
     .event
-        display: grid
+        display: block
         grid-template-columns: 50px auto
         grid-template-rows: auto auto
         margin: 0
@@ -34,45 +34,46 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #aa00ff, "deep-purple":
             padding: 5px
             margin: 10px 0
         &.active
-            .content
-                opacity: 1
-                height: 100%
             .data
                 border-bottom-right-radius: 0
+                transition: .3s 0s border-radius
                 .expandable
                     .material-icons-round
                         transform: rotate(180deg)
-        .icon
-            z-index: 999
-            border-top-left-radius: 15px
-            border-bottom-left-radius: 15px
-            width: 100%
-            height: 100%
-            transition: .3s border-radius
-            display: table
-            span
-                color: $background-color
-                font-size: 32px
-                display: table-cell
-                vertical-align: middle
-                text-align: center
-                height: 100%
+            .content
+                transition: .3s 0s max-height,.3s 0s opacity
         .data
             background-color: $background-color-alt
             cursor: pointer
-            border-top-right-radius: 15px
-            border-bottom-right-radius: 15px
-            padding: 10px
-            transition: .3s border-radius
+            border-radius: 30px
+            transition: .3s .1s border-radius
             display: grid
-            grid-template-columns: auto auto
+            width: 100%
+            grid-template-columns: 55px auto 50px
+            justify-content: stretch
             grid-template-rows: auto auto
+            .icon
+                z-index: 999
+                border-radius: 30px
+                width: 100%
+                height: 100%
+                transition: .3s border-radius
+                display: table
+                grid-row-start: span 2
+                span
+                    color: $background-color
+                    font-size: 32px
+                    display: table-cell
+                    vertical-align: middle
+                    text-align: center
+                    height: 100%
             .time
                 font-size: 20pt
-                margin: .1rem 0
+                margin: 10px
+                margin-top: 0
             .title
                 font-size: 30pt
-                margin: .1rem 0
+                margin: 10px
             .expandable
                 text-align: right
                 grid-row-start: span 2
@@ -90,13 +91,13 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #aa00ff, "deep-purple":
             grid-column-start: span 2
             margin: 0
             margin-left: 25px
-            opacity: 0
-            border-bottom-right-radius: 15px
+            opacity: 1
+            border-bottom-right-radius: 30px
             padding: 0 40px
             max-width: 100%
-            height: 0
+            max-height: 0
             overflow: hidden
-            transition: .3s .1s  height, .3s .1s opacity
+            transition: .3s .1s max-height,.3s .1s opacity
             @media only screen and (max-width: $mobile)
                 padding: 0 15px
             p
