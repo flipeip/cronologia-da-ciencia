@@ -5,6 +5,8 @@ color: cyan
 icon: lightbulb
 ---
 
+# Lei da Gravitação Universal - 1666
+
 "Famoso por sua "Lei da gravitação universal", enunciou ainda as Leis do Movimento. Descreveu os fenômenos ópticos: cor dos corpos, natureza da luz, decomposição da luz. Desenvolveu o cálculo diferencial e integral, importante ferramenta matemática utilizada em diversas áreas do saber. Foi ainda, o primeiro a construir um telescópio de reflexão, em 1668."[^gouveia]
 
 Em 1666, “Isaac Newton (1643-1727) elaborou uma das mais fundamentais de todas as leis, a “lei da gravitação universal”. Nela sustentou e provou que cada partícula de matéria atrai toda partícula outra, de matéria.”[^frazao]
@@ -13,6 +15,8 @@ Em 1666, “Isaac Newton (1643-1727) elaborou uma das mais fundamentais de todas
 - Primeira Lei de Newton: Princípio da Inércia
 - Segunda lei de Newton: Princípio da Dinâmica
 - Terceira Lei de Newton: Princípio da Ação e Reação
+
+---
 
 [^frazao]: FRAZÃO, Dilva. Biografia de Isaac Newton. **eBiografia**, 13 jan. 2020. Disponível em: [https://www.ebiografia.com/isaac_newton/](https://www.ebiografia.com/isaac_newton/).  Acesso em: 24 mar. 2021.
 
