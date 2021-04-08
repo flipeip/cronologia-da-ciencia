@@ -10,18 +10,18 @@
     <meta property="og:site_name" content="{{ site.title }}"/>
     {% if page.description %}<meta property="og:description" content="{{ page.description }}">
     <meta name="description" content="{{ page.description }}">{% endif %}
-    <meta property="og:image" content="{{'assets/media/social-graph.png' | relative_url }}">
+    <meta property="og:image" content="{{ 'assets/media/social-graph.png' | absolute_url }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
-    <link rel="stylesheet" href="{{ 'assets/css/default.css' | relative_url }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | relative_url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{'/favicon-32x32.png' | relative_url}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{'/favicon-16x16.png' | relative_url}}">
-    <link rel="manifest" href="{{'/site.webmanifest' | relative_url}}">
+    <link rel="stylesheet" href="{{ 'assets/css/default.css' | absolute_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | absolute_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{'/favicon-32x32.png' | absolute_url}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{'/favicon-16x16.png' | absolute_url}}">
+    <link rel="manifest" href="{{'/site.webmanifest' | absolute_url}}">
 </head>
 <body>
     {% include header.html %}
-    <script src="{{ '/assets/javascript/header.js' | relative_url }}"></script>
+    <script src="{{ '/assets/javascript/header.js' | absolute_url }}"></script>
     <div class="interface">
     {{ content }}
     </div>
