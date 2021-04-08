@@ -5,5 +5,13 @@
         <div class="expandable"><span class="material-icons-round">expand_more</span></div>
         <h2 class="time">{{ include.time }}</h2>
     </div>
-    <div class="content">{{ include.content | markdownify }}</div>
+    <div class="content">
+        {% if include.video %}
+        <video class="video-profile" id="video-{{ include.video }}" muted onmouseover="playAnimation(this)" onended="resetAnimation(this)">
+            <source src="assets/media/animations/{{ include.video }}.mp4" type="video/mp4">
+            *Seu navegador não suporta vídeo*
+        </video>
+        {% endif %}
+        {{ include.content | markdownify }}
+    </div>
 </section>

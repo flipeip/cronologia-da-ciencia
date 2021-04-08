@@ -3,6 +3,7 @@ title: Isaac Newton
 time: 1643-1727
 color: cyan
 icon: lightbulb
+video: isaac-newton
 ---
 
 # Lei da Gravitação Universal - 1666

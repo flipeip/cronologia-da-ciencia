@@ -3,6 +3,7 @@ title: Pitágoras
 time: 582 a.C. - 497 a. C.
 color: pink
 icon: pin
+video: pitagoras
 ---
 
 # Teorema de Pitágoras

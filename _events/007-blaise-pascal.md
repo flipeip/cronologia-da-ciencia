@@ -3,6 +3,7 @@ title: Blaise Pascal
 time: 1623-1662
 color: light-blue
 icon: calculate
+video: blaise-pascal
 ---
 
 # Calculadora Mecânica - 1642

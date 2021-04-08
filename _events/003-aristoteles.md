@@ -3,6 +3,7 @@ title: Aristóteles
 time: 384 a.C./322 a.C
 color: purple
 icon: psychology
+video: aristoteles
 ---
 
 # Início da Lógica

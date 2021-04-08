@@ -3,9 +3,10 @@ title: René Descartes
 time: 1596-1650
 color: blue
 icon: grid_3x3
+video: rene-descartes
 ---
 
-### Racionalismo ou Pensamento Cartesiano - 1637
+# Racionalismo ou Pensamento Cartesiano - 1637
 
 "René Descartes realizou diversos trabalhos na área da filosofia, ciências e matemática. Relacionou a álgebra com a geometria, fato que fez surgir a geometria analítica e o sistema de coordenadas, conhecido hoje como "Plano Cartesiano"."[^frazao]
 

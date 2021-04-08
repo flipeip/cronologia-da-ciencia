@@ -3,6 +3,7 @@ title: Nikola Tesla
 time: 1856-1943
 color: green
 icon: bolt
+video: nikola-tesla
 ---
 
 # Campo Magnético Rotativo - 1882

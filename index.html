@@ -1,13 +1,15 @@
 ---
 layout: default
+description: Pesquisa e documentação de importantes cientistas para a evolução da Metodologia Científica e para a Ciência da Computação.
 ---
 <div class="events">
 <div class="timeline-point"></div>
 {% for event in site.events %}
 {% capture pos %}{{ forloop.index }}{% endcapture %}
-{% include event_layout.html color=event.color index=pos title=event.title content=event.content time=event.time icon=event.icon %}
+{% include event_layout.html color=event.color index=pos title=event.title content=event.content time=event.time icon=event.icon video=event.video %}
 {% endfor %}
 <div class="line"></div>
 <div class="timeline-point"></div>
 </div>
 <script src="{{ '/assets/javascript/interactions.js' | relative_url }}"></script>
+<script src="{{ '/assets/javascript/video.js' | relative_url }}"></script>

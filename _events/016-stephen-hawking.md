@@ -3,6 +3,7 @@ title: Stephen Hawking
 time: 1942-2018
 color: deep-orange
 icon: filter_tilt_shift
+video: stephen-hawking
 ---
 
 # Teorema da Singularidade - 1974

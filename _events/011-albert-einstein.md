@@ -3,6 +3,7 @@ title: Albert Einstein
 time: 1879-1955
 color: light-green
 icon: view_in_ar
+video: albert-einstein
 ---
 
 # Teoria da Relatividade - 1905

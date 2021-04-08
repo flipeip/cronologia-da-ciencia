@@ -3,6 +3,7 @@ title: Alan Turing
 time: 1912-1954
 color: amber
 icon: computer
+video: alan-turing
 ---
 
 # Máquina de Turing - 1936

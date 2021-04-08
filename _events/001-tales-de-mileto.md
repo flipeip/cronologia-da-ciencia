@@ -3,6 +3,7 @@ title: Tales de Mileto
 time: 624 a.C./558 a.C.
 color: red
 icon: change_history
+video: tales-de-mileto
 ---
 
 # Teorema de Tales

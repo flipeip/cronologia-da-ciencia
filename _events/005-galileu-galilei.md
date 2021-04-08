@@ -3,6 +3,7 @@ title: Galileu Galilei
 time: 1564-1642
 color: indigo
 icon: travel_explore
+video: galileu-galilei
 ---
 
 # Criação do Método Científico
