@@ -3,6 +3,7 @@ title: Karl Popper
 time: 1902-1994
 color: lime
 icon: visibility
+video: karl-popper
 ---
 
 # Método Hipotético Dedutivo - 1935

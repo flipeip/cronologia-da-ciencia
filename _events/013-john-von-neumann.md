@@ -3,7 +3,6 @@ title: John Von Neumann
 time: 1903-1957
 color: yellow
 icon: description
-video: john-von-neumann
 ---
 
 # Arquitetura de Computadores -  Década de 40
