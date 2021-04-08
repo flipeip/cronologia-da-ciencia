@@ -30,6 +30,9 @@ body
     min-height: 100vh
     margin: 0
     background-image: url("../background.svg")
+    background-attachment: fixed
+    background-size: cover
+    background-repeat: no-repeat
 
 a
     color: $text-primary-color
@@ -46,6 +49,8 @@ a
 
 .container-404
     background-color: transparentize($background-color, 0.3)
+    -webkit-backdrop-filter: blur(8px)
+    backdrop-filter: blur(8px)
     margin: auto auto
     margin-bottom: 40px
     padding: 20px

@@ -45,6 +45,8 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #aa00ff, "deep-purple":
                 transition: .3s 0s max-height,.3s 0s opacity
         .data
             background-color: transparentize($background-color-alt, 0.3)
+            -webkit-backdrop-filter: blur(8px)
+            backdrop-filter: blur(8px)
             cursor: pointer
             border-radius: 30px
             transition: .3s .1s border-radius
