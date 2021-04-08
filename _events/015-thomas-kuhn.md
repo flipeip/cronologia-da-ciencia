@@ -3,6 +3,7 @@ title: Thomas Kuhn
 time: 1922-1996
 color: orange
 icon: history_edu
+video: thomas-kuhn
 ---
 
 # Ciência Subjetivista
