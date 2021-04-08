@@ -20,6 +20,8 @@
     <link rel="manifest" href="{{'/site.webmanifest' | relative_url}}">
 </head>
 <body>
+    {% include header.html %}
+    <script src="{{ '/assets/javascript/header.js' | relative_url }}"></script>
     <div class="interface">
     {{ content }}
     </div>

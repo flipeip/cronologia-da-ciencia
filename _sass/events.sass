@@ -36,14 +36,15 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #aa00ff, "deep-purple":
         &.active
             .data
                 border-bottom-right-radius: 0
-                transition: .3s 0s border-radius
+                background-color: $background-color-alt
+                transition: .3s 0s border-radius, .3s background-color
                 .expandable
                     .material-icons-round
                         transform: rotate(180deg)
             .content
                 transition: .3s 0s max-height,.3s 0s opacity
         .data
-            background-color: $background-color-alt
+            background-color: transparentize($background-color-alt, 0.3)
             cursor: pointer
             border-radius: 30px
             transition: .3s .1s border-radius
@@ -52,6 +53,7 @@ $color-map: ( "red": #F44336, "pink": #E91E63, "purple": #aa00ff, "deep-purple":
             grid-template-columns: 55px auto 50px
             justify-content: stretch
             grid-template-rows: auto auto
+            transition: .3s background-color
             .icon
                 z-index: 999
                 border-radius: 30px
