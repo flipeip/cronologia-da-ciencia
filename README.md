@@ -83,13 +83,13 @@ As cores disponíveis são:
 
 ### Adicionando o texto
 
-Aqui é com você. Após a parte de configuração, adicione o texto e use as formatações de Markdown que são processadas pelo site automaticamente (Aprenda mais sobre markdown [aqui](https://guides.github.com/features/mastering-markdown/)). No entanto, alguns padrões foram usados no conteúdo original do site e podem ser seguidos:
+Aqui é com você. Após a parte de configuração, adicione o texto e use as formatações de Markdown que são processadas pelo site automaticamente (Aprenda mais sobre Markdown [aqui](https://guides.github.com/features/mastering-markdown/)). No entanto, alguns padrões foram usados no conteúdo original do site e podem ser seguidos:
 
 #### 1 - Referências
 
 Por originalmente ser um projeto de universidade, foi adotado o padrão ABNT para referências a textos externos, seguindo o seguinte formato no arquivo:
 
-No final do arquivo, a referência é colocada da seguinte modelo:
+No final do arquivo, a referência é colocada seguindo o modelo:
 ```markdown
 ---
 
@@ -98,7 +98,7 @@ No final do arquivo, a referência é colocada da seguinte modelo:
 [^frazao]: FRAZÃO, Dilva. Biografia de Karl Popper. **eBiografia**, 9 jan. 2020. Disponível em: [https://www.ebiografia.com/karl_popper/](https://www.ebiografia.com/karl_popper/). Acesso em: 5 abr. 2021.
 ```
 
-Para referenciar, basta colocar ```[^nome]``` após o texto externo:
+Para referenciar o autor, basta colocar ```[^nome]``` após o texto externo:
 ```markdown
 ...É o critério da Falseabilidade.”[^cabral]
 ```
