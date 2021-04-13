@@ -6,7 +6,7 @@ Este site foi desenvolvido com o software de geração de sites estáticos [Jeky
 
 O site foi programado por Felipe Matheus([Fittl3](https://github.com/Fittl3/)), as animações de perfil de cada cientista foram produzidas por [Noemi Medeiros](https://github.com/noemimedeiros) e os textos foram produzidos por ambos, junto com Arthur Henrique([ArthurHab](https://github.com/ArthurHab)) e Anna Lys.
 
-# Cientistas em destaque no site
+## Cientistas em destaque no site
 
 O site dá destaque aos seguintes cientistas (em ordem de data de nascimento):
 
@@ -27,11 +27,11 @@ O site dá destaque aos seguintes cientistas (em ordem de data de nascimento):
 15. Thomas Kuhn
 16. Stephen Hawking
 
-# Colaborando com mais cientistas
+## Colaborando com mais cientistas
 
 É possível ajudar a expandir a lista do site criando um pull-request adicionando novos nomes ao site, desde que siga o seguinte procedimento:
 
-## Adicionando um Cientista
+### Adicionando um Cientista
 
 Simplesmente adicione um novo arquivo Markdown à pasta [```_events```](https://github.com/Fittl3/cronologia-da-ciencia/tree/main/_events) no seguinte formato:
 
@@ -41,7 +41,7 @@ Observe que **XXX** é o número que indica a posição do cientista na lista, e
 
 ```014-alan-turing.md```
 
-## Configurando o Cientista
+### Configurando o Cientista
 
 Adicione o seguinte trecho no início do arquivo:
 ```markdown
@@ -56,10 +56,10 @@ video: nome-do-cientista
 | Campo | Descrição|
 |---|---|
 | ```title``` | O nome do cientista que será usado como título. |
-| ```time``` | O ano ou época de nascimento e morte do cientista. |
+| ```time``` | O ano ou época de nascimento e falecimento do cientista. |
 | ```color``` | Uma cor para ser usada como tema na lista. |
 | ```icon``` | Um ícone do [Material Icons](https://fonts.google.com/icons) |
-| ```video``` | O nome de um arquivo de vídeo .mp4 sem extenção para ser usado como perfil (Não é obrigatório) |
+| ```video``` | O nome de um arquivo de vídeo .mp4 sem extensão para ser usado como perfil (Não é obrigatório) |
 
 As cores disponíveis são:
 | Cor | Nome da Cor |
@@ -81,11 +81,11 @@ As cores disponíveis são:
 |![orange](https://dummyimage.com/10x10/FF9800/FF9800.png) | ```orange``` |
 |![deep-orange](https://dummyimage.com/10x10/FF5722/FF5722.png) | ```deep-orange``` |
 
-## Adicionando o texto
+### Adicionando o texto
 
 Aqui é com você. Após a parte de configuração, adicione o texto e use as formatações de Markdown que são processadas pelo site automaticamente (Aprenda mais sobre markdown [aqui](https://guides.github.com/features/mastering-markdown/)). No entanto, alguns padrões foram usados no conteúdo original do site e podem ser seguidos:
 
-### 1 - Referências
+#### 1 - Referências
 
 Por originalmente ser um projeto de universidade, foi adotado o padrão ABNT para referências a textos externos, seguindo o seguinte formato no arquivo:
 
@@ -98,14 +98,14 @@ No final do arquivo, a referência é colocada da seguinte modelo:
 [^frazao]: FRAZÃO, Dilva. Biografia de Karl Popper. **eBiografia**, 9 jan. 2020. Disponível em: [https://www.ebiografia.com/karl_popper/](https://www.ebiografia.com/karl_popper/). Acesso em: 5 abr. 2021.
 ```
 
-Para referenciar, basta colocar ```[^nome]``` após o texto usado como referência:
+Para referenciar, basta colocar ```[^nome]``` após o texto externo:
 ```markdown
 ...É o critério da Falseabilidade.”[^cabral]
 ```
 
 Você é livre para colocar seu próprio nome como referência do texto seguindo esse modelo, mesmo sem a formatação ABNT, caso o texto seja originalmente produzido por você.
 
-### 2 - Grande Feito
+#### 2 - Grande Feito
 
 No início do texto, é recomendado colocar um título em Markdown com o grande feito ou descoberta do cientista que será discutido no decorrer do texto:
 
@@ -113,7 +113,7 @@ No início do texto, é recomendado colocar um título em Markdown com o grande 
 # Método Hipotético Dedutivo - 1935
 ```
 
-### 3 - Perfil
+#### 3 - Perfil
 
 Há duas formas de colocar uma imagem de perfil no cientista. A usada no conteúdo original do site é utilizando a tag de configuração ```video```. Os vídeos seguem o seguinte padrão:
 
@@ -132,11 +132,11 @@ Caso um vídeo nesse formato seja complicado, adicionar uma foto estática antes
 "Alan Turing (1912-1954) foi um matemático britânico...
 ```
 
-# Outras formas de colaborar
+## Outras formas de colaborar
 
 Caso encontre erros, formas de otimizar o site, ou queira adicionar funções novas, crie uma [issue](https://github.com/Fittl3/cronologia-da-ciencia/issues) ou [pull request](https://github.com/Fittl3/cronologia-da-ciencia/pulls) ao projeto, que será avaliado e corrigido/adicionado apropriadamente. Observe que novos cientistas também são adicionados por pull-requests.
 
-# [Licença](https://github.com/Fittl3/cronologia-da-ciencia/blob/main/LICENSE)
+## [Licença](https://github.com/Fittl3/cronologia-da-ciencia/blob/main/LICENSE)
 
 O código fonte do site é licenciado sobre a liceça [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed.pt_BR), ou seja, é domínio público, podendo ser copiado e editado sem a necessidade de atribuição, mesmo que seja para uso comercial.
 
