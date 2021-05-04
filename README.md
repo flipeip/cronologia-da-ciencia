@@ -123,7 +123,7 @@ Há duas formas de colocar uma imagem de perfil no cientista. A usada no conteú
 - O primeiro frame do vídeo é uma imagem sem alteração do cientista
 - Podem ter qualquer aspecto, mas verticalmente não passam de 600px
 
-Caso um vídeo nesse formato seja complicado, adicionar uma foto estática antes do título do grande feito pode ser ideal também.
+Caso um vídeo nesse formato seja complicado, adicionar uma foto estática antes do título do grande feito é uma ótima alternativa.
 ```markdown
 ![Alan Turing com 16 anos de idade](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alan_Turing_Aged_16.jpg/200px-Alan_Turing_Aged_16.jpg)
 
@@ -138,6 +138,6 @@ Caso encontre erros, formas de otimizar o site, ou queira adicionar funções no
 
 ## [Licença](https://github.com/Fittl3/cronologia-da-ciencia/blob/main/LICENSE)
 
-O código fonte do site é licenciado sobre a liceça [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed.pt_BR), ou seja, é domínio público, podendo ser copiado e editado sem a necessidade de atribuição, mesmo que seja para uso comercial.
+O código fonte do site é licenciado sobre a licença [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed.pt_BR), ou seja, é domínio público, podendo ser copiado e editado sem a necessidade de atribuição, mesmo que seja para uso comercial.
 
 Fique atento ao conteúdo interno do site, que pode estar sobre outras licenças (textos e imagens, por exemplo).
