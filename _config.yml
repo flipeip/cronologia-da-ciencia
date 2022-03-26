@@ -1,7 +1,7 @@
 title: Cronologia da Ciência
 description: Uma linha do tempo interativa contando um pouco da história da ciência
 baseurl: "/cronologia-da-ciencia"
-url: "https://shianbox.github.io"
+url: "https://felipeipe.github.io"
 
 exclude:
   - /.vscode/
