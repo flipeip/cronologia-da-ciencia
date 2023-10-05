@@ -1,10 +1,10 @@
-# [Cronologia da Ciência](https://fittl3.github.io/cronologia-da-ciencia)
+# [Cronologia da Ciência](https://flipeip.github.io/cronologia-da-ciencia)
 
 Uma linha do tempo interativa de nomes de grandes cientistas e filósofos, contando um pouco da história da Metodologia Científica e Ciência da Computação.
 
 Este site foi desenvolvido com o software de geração de sites estáticos [Jekyll](https://jekyllrb.com/), para facilitar a adição, remoção e alteração de novos cientistas, bem como reutilizar a estrutura do site para novos projetos de linha do tempo. O site é preparado para ser hospedado no [GitHub Pages](https://pages.github.com/).
 
-O site foi programado por Felipe Matheus([Shianbox](https://github.com/felipeipe/)), as animações de perfil de cada cientista foram produzidas por [Noemi Medeiros](https://github.com/noemimedeiros) e os textos foram produzidos por ambos, junto com Arthur Henrique([ArthurHab](https://github.com/ArthurHab)) e Anna Lys.
+O site foi programado por Felipe Matheus([flipeip](https://github.com/flipeip/)), as animações de perfil de cada cientista foram produzidas por [Noemi Medeiros](https://github.com/noemimedeiros) e os textos foram produzidos por ambos, junto com Arthur Henrique([ArthurHab](https://github.com/ArthurHab)) e Anna Lys.
 
 ## Cientistas em destaque no site
 
